@@ -1,0 +1,204 @@
+/*tamaño del formulario dependiendo la pagina*/
+.forms {
+  width: 20%;
+}
+
+/*iconos necesarios*/
+.dyslexia{
+  width: 50px;
+  height: 50px;
+}
+
+.find{
+  width: 22px;
+  height: 22px;
+}
+
+.zero{
+  background-color: #FFF6D3;
+}
+
+.CIRCLE{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CIR{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CIRCLE a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.CIRCLE:hover{
+    background-color: black;
+}
+
+.CIRCLE ion-icon {
+  width: 80%;
+  height: 80%;
+  /*position: relative;*/
+  transition: transform 0.5s ease;
+}
+.user{
+    color: black;
+}
+
+.user:hover{
+    color: white;
+}
+
+/*elementos de formulario*/
+.buttons{
+    background-color: transparent;
+    height: auto;
+    width : auto;
+    padding: 10px 5px;
+    border: 2px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.color{
+  background-color: whitesmoke;
+}
+
+.buttons:hover{
+  background-color: #5F5F5F;
+}
+
+body.active .inputs, body.active .color{
+  background-color: #565865;
+  color: white;
+}
+
+body.active .buttons{
+  color: white;
+}
+
+body.active .buttons:hover{
+  background-color: #716e7d;
+}
+
+.inputs {
+  flex: 1;
+  width: 90%;
+  min-width: 70%;
+  background-color: white;
+  border: none;
+  margin: 3px;
+  padding: 5px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.fixed{
+  margin: 15px;
+  padding: 5px;
+  border: 1px #aaaaac;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #aaaaac;
+  background-color: white;
+  color: black;
+  width: auto;
+  min-width: 30%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 1000;
+  transform: translateX(0);
+  transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+  
+  /*transition: transform 0.5s ease;*/
+}
+
+.body.menu-active .fixed {
+  transform: translateX(80%);
+  transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+}
+
+.space{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/*formularios para los comentarios para que permanezcan invisibles*/
+
+.invisible{
+  display: none
+}
+
+.post.active .invisible{
+  display: block;
+}
+
+
+
+.formulario{
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50px;
+    background-color: white;
+    width: 45%;
+    
+    top: 50%;
+    left: 50%;
+    box-shadow: #aaaaac;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: content-box;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.enviar{
+    text-align: right;
+    align-items: right;
+}
+.enviar2{
+    text-align: left;
+    align-items: left;
+}
+.btn{
+    border-radius: 200px;
+    margin: 5px;
+    padding: 20px;
+    font-size: 1em;
+    background-color: #9C9C9C;
+}
+
+.formulario input{
+    z-index: 1001;
+    margin-bottom: 0.9em;
+}
+
+.inp {
+  flex: 1;
+  width: 90%;
+  background-color: #c5c4c4;
+  border: none;
+  
+  padding: 15px;
+  border-radius: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.indexneg{
+    z-index: -1;
+}

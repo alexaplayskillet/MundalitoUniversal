@@ -1,0 +1,220 @@
+/* Publicaciones */
+.content {
+  width: 60%;
+  padding-top: 0;
+}
+
+.post {
+  margin: 15px;
+  padding: 5px;
+  border: 1px #aaaaac;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #aaaaac;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  width: auto;
+  min-width: 30%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+body.active .post, body.active .posts, body.active .ficha, body.active .Cpost, body.active .formulario, body.active .fixed{
+    /*background-color: #636572;*/
+    background-color: #565865;
+    color: white;
+    box-shadow: 5px 5px 5px #4e505e;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.userinfo {
+  display: flex;
+}
+
+.OficialHeader {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+.NoticiasTagL {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  text-decoration: underline;
+}
+
+.username {
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.info {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+body.active .forms .post p{
+  color: white;
+}
+
+.int{
+  font-size: 2em;
+  font-size-adjust: calc(var(--font-size) + 3em);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.int1{
+  font-size: 1.5em;
+  font-size-adjust: calc(var(--font-size) + 3em);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.interact{
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+
+.int.animate2{
+  transform: scale(1.5) translateX(50%);
+  transition: transform 0.2s ease color 0.2s ease;
+
+}
+
+.int.animate, .int1.animate {
+  transform: scale(1.5) rotate(-45deg);
+  transition: transform 0.2s ease color 0.2s ease;
+}
+
+.like-btn.active .like, .comment-btn.active .comentar, .sendto.active .send, .IMG.active .image, .VID.active .video, .EMOJI.active .emo{
+  color: #009951;
+}
+
+body.active .like-btn.active .like, body.active .comment-btn.active .comentar, body.active .sendto.active .send, body.active .IMG.active .image, body.active .VID.active .video, body.active .EMOJI.active .emo {
+  color: #E67402;
+}
+
+/*iconos de los usuarios*/
+.one{
+  background-color: #d3ffe2;
+}
+
+.inline{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+
+}
+
+.comment-form {
+  width: 100%;
+}
+
+
+.sendto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+.send{
+  font-size: 1.5em;
+  transition: transform 0.2s ease, color 0.3s ease;
+
+}
+
+.ficha{
+  margin: 15px;
+  padding: 5px;
+  border: 1px #aaaaac;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #aaaaac;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  width: auto;
+  min-width: 30%;
+  align-items: center;
+  display: inline-block;
+  margin-left: 35%;
+  text-align: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.Back{
+  position: fixed;
+  top: 85px;
+  left: 6.5%;
+}
+
+.int:hover{
+  color: #316E5D;
+}
+
+.comments{
+  background-color: #e0e1e3;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+
+body.active .comments{
+  background-color: #393a42;
+  color: white;
+}
+body.active .comments .username, body.active .comments .postcom .com{
+  color: white;
+  transition: color 0.5s ease;
+} 
+.postcom {
+  margin: 15px;
+  padding: 5px;
+  border: 10px red;
+  border-radius: 20px;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  width: auto;
+  min-width: 30%;
+}
+
+.com{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.postcom label{
+  font-size: 0.8em;
+}
+
+.image-container {
+ display: flex;
+ height: auto;
+ justify-content: center;
+ align-items: center;
+ object-fit: cover;
+}
+.postIMG{
+  
+  align-items: center;
+  max-width: 100%;
+    height: auto;
+    width: auto\9;
+  object-fit: cover; /* Options: cover, contain, fill, none, scale-down */
+  margin: auto;
+}

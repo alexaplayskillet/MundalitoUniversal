@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-mode-width: 100px;
+  --dark-mode-height: 48px;
+
+  /*tamaño de la fuente*/
+  --font-size: 1em;
+
+  /*tipo de letra*/
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  /*cuestiones de la fuente de texto a modificar*/
+  font-size: calc(var(--font-size) * 1em);
+  font-family: var(--font-family);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #e0e1e3;
+  overflow-x: hidden;
+  padding-top: 0;
+}
+
+.DARK-MODE {
+  border: 2px solid black;
+  width: var(--dark-mode-width);
+  height: var(--dark-mode-height);
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background-color: #DFDEDE;
+  transition: background-color 0.5s ease;
+}
+
+body.active .DARK-MODE {
+  background-color: white;
+}
+
+.DARK-MODE .CIRCLE {
+  width: 40%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  transform: translateX(10%);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+body.active .DARK-MODE .CIRCLE {
+  transform: translateX(140%);
+  background-color: #2A2A2C;
+}
+
+.DARK-MODE .CIRCLE ion-icon {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.DARK-MODE .CIRCLE .mun {
+  transform: translateY(-120%);
+}
+
+.DARK-MODE .CIRCLE .sun {
+  color: #FCDE5B;
+}
+
+body.active .CIRCLE .mun {
+  transform: translateX(0);
+  color: white;
+}
+
+body.active .CIRCLE .sun {
+  transform: translateY(120%);
+}
+
+
+.TITLE {
+  font-family: fantasy;
+  text-align: center;
+  letter-spacing: 0.3em;
+  height: 90px;
+  width: 100%;
+  background-color: #009951;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  color: #f0f0f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.active .TITLE {
+  background-color: #006D0D;
+  color: white;
+}
+
+body.active{
+    /*background-color: #45474f;*/
+    background-color: #39393E;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  margin-top: 90px;
+  padding-top: 0;
+  /*height: 84vh;*/
+  height: 100vh;
+  transition: margin-left 0.3s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.body.menu-active {
+  margin-left: 21%;
+  transition: margin-left 0.5s ease;
+}
+
+.body:not(.menu-active) {
+  margin-left: 0;
+  transition: margin-left 0.5s ease;
+}
+
+/* Menú lateral */
+.menu {
+  background-color: white;
+  margin: 5px;
+  border: 5px #f0f0f3;
+  position: fixed;
+  border-radius: 30px;
+  top: 130px;
+  left: 0;
+  width: 20%;
+  /*height: 400px;*/
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  min-width: 161px;
+}
+
+body.active .menu{
+  background-color: #636572;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menulist {
+  list-style-type: none;
+  /*border: 5px black;*/
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.menulist li {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50px;
+  list-style: none;
+  border: 2px solid #f0f0f3;
+  min-width: 150px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menulist li:hover {
+  background-color: #636572;
+  color: white;
+  cursor: pointer;
+
+}
+
+body.active .menu2 .menulist li a:hover, body.active .menu2 .menulist li:hover {
+  color: black;
+}
+
+body.active .menulist li {
+  color: white;
+}
+
+body.active .menulist li:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  background-color: #009951;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.active .hamburger{
+  background-color: #006D0D;
+  color: white;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.hamburger:hover {
+  background-color: #316E5D;
+  color: white;
+}
+
+/*a{
+  color: #009951;
+}
+*/
+body.active a{
+  color: white;
+}
+
+/*focuseados por el tab*/
+*:focus{
+  border: 5px solid #316E5D;
+  transition: border 0.2s ease;
+}
+
+.header{
+  text-decoration: none;
+  margin-left: 2%;
+  color: black;
+  font-weight: 900;
+  transition: color 0.5s ease;
+}
+
+body.active .header, body.active .menu .menulist li a{
+  color: white;
+}
+.indexneg{
+    z-index: -1;
+}
+
+.menu .menulist li a, .post a{
+  color: black;
+}
+
+.menu2 .menulist li a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  width: 100%;
+}
+
+ body.active .menu .menulist li:hover a{
+  color: black;
+}

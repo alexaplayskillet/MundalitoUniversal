@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<HTML lang="es">
+        <HEAD>
+			<TITLE>Creacion de Categoria</TITLE>
+			<meta name=”description” content=”Sports-themed-Social-media-website”/>
+			<meta name=”author” content=”ACT-DPQH”/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--aqui van las ligas locales-->
+            <LINK REL="STYLESHEET" type="text/css" HREF="./CSS/accesibility.css">
+			<LINK REL="STYLESHEET" type="text/css" HREF="./CSS/background.css">
+			<LINK REL="STYLESHEET" type="text/css" HREF="./CSS/forms.css">
+			<LINK REL="STYLESHEET" type="text/css" HREF="./CSS/posts.css">
+			<LINK REL="STYLESHEET" type="text/css" HREF="./CSS/styles.css">	
+			<LINK REL="STYLESHEET" type="text/css" HREF="./CSS/config.css">
+            
+            <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="./CSS/validaciones.css">
+			<!--<LINK REL="STYLESHEET" type="text/css" HREF="login.css">-->
+			<!--aqui van las ligas externas-->
+            <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		</HEAD>
+        <BODY>
+			<DIV CLASS="UNFILLED_CIRCLE_OUT indexneg">
+				<DIV CLASS="UNFILLED_CIRCLE_IN indexneg">
+
+				</DIV>
+			</DIV>
+			<DIV CLASS="UNFILLED_CIRCLE_OUT_FIXED LEFT indexneg">
+				<DIV CLASS="UNFILLED_CIRCLE_IN_FIXED indexneg">
+
+				</DIV>
+			</DIV>
+			<DIV CLASS="UNFILLED_CIRCLE_OUT_FIXED RIGHT indexneg">
+				<DIV CLASS="UNFILLED_CIRCLE_IN_FIXED indexneg">
+
+				</DIV>
+			</DIV>
+            <DIV CLASS="TITLE">
+				<button id="toggleMenu" class="hamburger" accesskey="M">☰</button>
+                &nbsp;
+				<H1>MUNDALITO UNIVERSAL</H1>
+                <DIV CLASS="DARK-MODE" tabindex="0">
+                    
+                    <DIV CLASS="CIRCLE toggle">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="mun"></ion-icon>
+
+                    </DIV>
+                </DIV>
+                <!--colocar icono del perfil-->
+				<DIV CLASS="CIRCLE zero profile">
+					<ion-icon name="person" class="user"></ion-icon>
+				</DIV>
+            </DIV>
+        <br>
+		<DIV CLASS="body">
+			<button id="Acc1" class="Accesibility">
+				<ion-icon name="body" class="dyslexia"></ion-icon>
+			</button>
+			<!--<ASIDE>-->
+			<DIV CLASS ="menu" tabindex="0">
+				<!--<LABEL>ESTE ES EL MENU ACCESIBLE</LABEL>-->
+				<UL CLASS="menulist">
+					<LI><A HREF="main.html">VOLVER</A></LI>
+					<LI><A HREF="Noticias.html">NOTICIAS</A></LI>
+					<LI><A HREF="Jugadas.html">JUGADAS</A></LI>
+					<LI><A HREF="Entrevistas.html">ENTREVISTAS</A></LI>
+					<LI><A HREF="Estadisticas.html">ESTADISTICAS</A></LI>
+					<LI><A HREF="Polemicas.html">POLEMICAS</A></LI>
+					<LI><A HREF="AcercaDe.html">ACERCA DEL MUNDIAL</A></LI>
+					<LI><A HREF="MUNDIALES PASADOS.html">MUNDIALES PASADOS</A></LI>
+				</UL>
+			</DIV>
+			<DIV CLASS="content" tabindex="0">
+				<!--añadimos la barra de busqueda-->
+				<DIV CLASS="post fixed" tabindex="0">
+					<FORM CLASS="space">
+						<INPUT TYPE="TEXT" CLASS="inputs" PLACEHOLDER="Buscar..." tabindex="0">
+							
+						<BUTTON ID="FIND"  CLASS="buttons" tabindex="0">
+							<ion-icon name="search" class="find send"></ion-icon>
+						</BUTTON>
+					</FORM>
+				</DIV>
+                <!--AQUI AÑADIMOS PARA CREAR TU PUBLICACION-->
+				<DIV CLASS="formulario" style="align-items: center; justify-content: space-between; margin-left: 25%;">
+                    <FORM>
+                        <H2>Crear categoría</H2>
+                        <INPUT TYPE="text" CLASS="inp" PLACEHOLDER="Titulo de la categoria">
+                            <DIV CLASS="validations">
+                            <small class="pls">Por favor ingresa el título</small>
+                            <small class="error">El título debe tener por lo menos 4 caracteres, pueden ser letras y números</small>
+                        </DIV>
+                        <TEXTAREA CLASS="inp" PLACEHOLDER="Descripcion de su contenido"></TEXTAREA>
+                        <DIV CLASS="validations">
+                            <small class="pls">Por favor ingresa la descripción</small>
+                        </DIV>
+                        <DIV CLASS="enviar">
+                            <INPUT TYPE="submit" CLASS="btn" tabindex="0" VALUE="Crear">
+                        </DIV>  
+                    </FORM>
+                </DIV>
+			
+			</DIV>
+			<DIV CLASS="forms">
+				<DIV CLASS="menu2">
+					<UL CLASS="menulist">
+						<LI><A HREF="myposts.html">Perfil</A></LI>
+						<LI><A HREF="config.html">Ajustes</A></LI>
+						<LI><A HREF="index.html">Salir</A></LI>
+						<LI CLASS="red"><A HREF="admin.html">ADMIN</A></LI>
+					</UL>
+				</DIV>
+				<BR/>
+				<DIV CLASS="activo" tabindex="0">
+					<!--<P>Aqui van los botones que cambian el tamaño de la fuente dentro de la pagina</P>-->
+					<BUTTON ID="font-up" class="buttons color" tabindex="0">Aumentar fuente+</BUTTON>
+					<BR>
+					<BR>
+					<BUTTON ID="font-down" class="buttons color" tabindex="0">Disminuir fuente-</BUTTON>
+					<BR>
+					<BR>
+					<BUTTON ID="Dislexia" class="buttons color" tabindex="0">Dyslexia friendly</BUTTON>
+				</DIV>
+			</DIV>
+		</DIV>
+
+            <!-- colocar los scripts casi al final para que funcionen-->
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+            <SCRIPT SRC="./JS/script.js"></SCRIPT>
+            <SCRIPT SRC="./JS/icono.js"></SCRIPT>
+            <SCRIPT SRC="./JS/categoria.js"></SCRIPT>
+        </BODY>
+</HTML>

@@ -1,0 +1,96 @@
+.menu2 {
+  background-color: #009951; /* verde brillante */
+  color: white;
+  margin: 5px;
+  border: 2px solid #006D0D;
+  position: fixed;
+  border-radius: 30px;
+  top: 130px;
+  left: 80%;
+  width: 20%;
+  opacity: 0;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    background-color 0.5s ease,
+    color 0.5s ease;
+  min-width: 161px;
+
+  /* 🔒 No interactuable cuando está oculto */
+  pointer-events: none;
+}
+
+body.active .menu2{
+    background-color: #006D0D;
+}
+
+.menu2 li {
+  color: white;
+  text-align: center;
+}
+
+body.active .menu2 li:hover{
+  color:black;
+}
+
+.menu2.active {
+  opacity: 1; /* usa valores entre 0 y 1, no % */
+  transform: translateX(0);
+
+  /* 🔓 Reactivable al mostrarse */
+  pointer-events: auto;
+}
+
+.red{
+    background-color: #942525;
+    transition: background-color 0.5s ease;
+}
+
+body.active .red{
+    background-color: #6d0000;
+}
+
+.dual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start; /* alineados a la izquierda */
+}
+
+.contenido { 
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: margin-left 0.5s ease, width 0.5s ease;
+}
+
+.ajustar{
+    width: auto;
+}
+
+.Cpost {
+  margin: 15px 30px;
+  padding: 10px;
+  border: 1px #aaaaac;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #aaaaac;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  min-width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+  height: auto;
+}
+
+body.active .menu2 .menulist li:hover a{
+  color: black;
+}

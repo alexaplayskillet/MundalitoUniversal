@@ -1,0 +1,80 @@
+/*detalles del fondo como circulos o rayas*/
+.UNFILLED_CIRCLE_OUT{
+  width: 300px;
+  height: 300px;
+  border: 30px solid #FFC835;
+  border-radius: 50%;
+  
+  top: -20px;
+  left: -80px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  transform: border 0.5s ease;
+}
+
+body.active .UNFILLED_CIRCLE_OUT{
+  border: 30px solid #FFAB0F;
+}
+
+body.active .UNFILLED_CIRCLE_OUT_FIXED{
+  border: 40px solid #FFAB0F;
+}
+
+body.active .UNFILLED_CIRCLE_IN{
+  border: 30px solid #E67402;
+}
+
+body.active .UNFILLED_CIRCLE_IN_FIXED{
+  border: 40px solid #E67402;
+}
+
+.UNFILLED_CIRCLE_IN{
+  width: 100%;
+  height: 100%;
+  border: 30px solid #FFAB0F;
+  border-radius: 50%;
+  
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  transform: border 0.5s ease;
+}
+
+
+.LEFT{
+  left: -200px;
+}
+
+.RIGHT{
+  left: 80%;
+}
+.UNFILLED_CIRCLE_OUT_FIXED{
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  border: 40px solid #FFC835;
+  border-radius: 50%;
+  
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  transform: border 0.5s ease;
+}
+
+
+.UNFILLED_CIRCLE_IN_FIXED{
+  width: 100%;
+  height: 100%;
+  border: 40px solid #FFAB0F;
+  border-radius: 50%;
+  
+  /*position: fixed;*/
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  transform: border 0.5s ease;
+}
