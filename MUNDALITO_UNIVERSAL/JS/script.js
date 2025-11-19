@@ -77,6 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  addEventListener('keyup', e => {
+  if(e.key === 'ArrowUp' || e.key === '+') document.getElementById('font-up').click()
+  if(e.key === 'ArrowDown' || e.key === '-') document.getElementById('font-down').click()
+});
+
   fontUp(document.getElementById('font-up'));
   fontDown(document.getElementById('font-down'));
 
